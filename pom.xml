@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>sapphire-common</module>
+        <module>sapphire-web</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
