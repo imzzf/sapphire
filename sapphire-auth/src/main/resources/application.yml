@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sapphire-auth
+  profiles:
+    active: dev

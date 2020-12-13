@@ -40,6 +40,13 @@ public class Result implements Serializable {
     }
 
     /**
+     * 成功返回，自定义信息
+     */
+    public static Result success(String message) {
+        return new Result(ResultCode.SUCCESS.getCode(), message, null);
+    }
+
+    /**
      * 成功返回，有数据
      */
     public static Result success(Object data) {

@@ -1,0 +1,19 @@
+server:
+  port: 18801
+  servlet:
+    session:
+      cookie:
+        name: sapphire-auth-session
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sapphire?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 60000
